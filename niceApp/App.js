@@ -6,7 +6,8 @@ import {
   TextInput, 
   View, 
   SafeAreaView,
-  Button
+  Button,
+  ScrollView
  } from 'react-native';
 import Chart from "./components/Chart.jsx"
 
@@ -41,6 +42,7 @@ const App = () => {
 
   return (
     <SafeAreaView>
+      <ScrollView>
       <View><Text style={styles.titleText}>Cotización</Text></View>
       <Text>
         Total presupuesto: ${total}
@@ -77,7 +79,7 @@ const App = () => {
              </View>
            ))
          }
-      
+         </ScrollView>      
     </SafeAreaView>
   );
 }
@@ -93,6 +95,7 @@ const styles = StyleSheet.create({
     borderWidth:1
   },
   titleText: {
+    marginTop:"10%",
     fontSize: 30,
     fontWeight: 'bold',
   }
