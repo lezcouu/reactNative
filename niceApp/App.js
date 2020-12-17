@@ -43,7 +43,7 @@ const App = () => {
     <SafeAreaView>
       <View><Text style={styles.titleText}>Cotización</Text></View>
       <Text>
-        Total Income: ${total}
+        Total presupuesto: ${total}
       </Text>
       <Chart gigs={gigs} />   
         <TextInput
